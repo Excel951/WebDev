@@ -1,0 +1,116 @@
+body {
+    background-color: #F1FAEE;
+}
+
+button {
+    font-size: large;
+    color: #1D3557;
+    background-color: #e1feff;
+}
+
+button:hover {
+    color: #e1feff;
+    background-color: #1D3557;
+}
+
+.post button:active {
+    color: #e9d8a6;
+    background-color: #bb3e03;
+}
+
+h1,
+h2 {
+    /* koma dalam css berfungsi sebagai siblings atau "dan" */
+    color: #1D3557;
+}
+
+h2::first-letter {
+    font-size: 40px;
+}
+
+#signup {
+    /* ini adalah id selector */
+    color: #A8DADC;
+    background-color: #1D3557;
+}
+
+span {
+    color: #457B9D;
+}
+
+.tag {
+    /* ini adalah class selector */
+    background-color: #d6ebec;
+    color: #E63946;
+    font-size: 16px;
+}
+
+.post:nth-of-type(3) {
+    background-color: #00b4d8;
+}
+
+.post a {
+    /* 
+    spasi dalam css berfungsi sebagai descendant atau turunan 
+    descendant tidak harus child
+    */
+    color: #457B9D;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.post a:hover {
+    text-decoration: #E63946 underline;
+}
+
+.post a:active {
+    color: #E63946;
+}
+
+footer a {
+    color: #E63946;
+}
+
+h2+button {
+    /*
+    Style yang diubah adalah variabel akhir, yaitu button
+    jika ada 3 atau lebih variabel, yang diubah adalah variabel akhir atau v ke-n
+    */
+    font-size: 20px;
+}
+
+footer>a {
+    color: #457B9D;
+}
+
+input[type="password"] {
+    color: #E63946;
+}
+
+/*
+    dua style dibawah ini sama tapi dengan penulisan yang berbeda
+*/
+/* section[class="post"] {
+    background-color: #A8DADC;
+} */
+section.post {
+    background-color: #A8DADC;
+}
+
+a[href*="google"] {
+    color: magenta;
+}
+
+
+p::first-line {
+    color: #bb3e03;
+}
+
+p::first-letter {
+    font-size: 24px;
+}
+
+p::selection {
+    color: #a8dadc;
+    background-color: #e76f51;
+}

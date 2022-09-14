@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="/HTML_Intro/home.html">Back to Home</a></li>
+        </ul>
+    </header>
+    <h1>Forms Demo</h1>
+
+    <form action="/tacos">
+        <button type="button">PLEASE DO NOT SUBMIT THE FORM</button>
+        <p>
+            <label for="username">Enter a Username: </label>
+            <input id="username" type="text" placeholder="username" name="username">
+        </p>
+        <p>
+            <label for="password">Enter a password: </label>
+            <input id="password" type="password" placeholder="password" name="password">
+        </p>
+        <button>IN THE MIDDLE!</button>
+        <p>
+            <label for="color">Enter a Color: </label>
+            <input type="color" id="color" name="color">
+        </p>
+
+        <!--
+            Ketiga cara di atas merupakan cara yang paling umum dan sering digunakan
+        -->
+
+        <p>
+            <label>
+                <!--
+                    Cara ini merupakan cara yang paling mudah karna tidak membutuhkan
+                    for="..." dan id="..." tetapi tidak digunakan secara umum.
+                -->
+                Enter a Number:
+                <input type="number" placeholder="enter a number" name="num" min="1" max="100">
+            </label>
+        </p>
+        <!-- this button doesn't submit the form because of the "type" attribute -->
+        <button type="button">Regular Button (won't submit)</button>
+        <!-- this button submits the form! -->
+        <button>Submit!!!</button>
+        <!-- so does this one: -->
+        <input type="submit" value="Click Me!">
+    </form>
+    <hr>
+    <!-- outside the form, no default behavior -->
+    <button>OUTSIDE FORM!</button>
+
+
+
+
+    <h2>Example</h2>
+
+    <div class="input">
+        <label for="cheese">Do you like cheese?</label>
+        <input type="checkbox" name="cheese" id="cheese">
+    </div>
+
+    <div>
+        <label for="peas">Do you like peas?</label>
+        <input type="checkbox" name="peas" id="peas">
+    </div>
+
+    <div>
+        <label for="chocolate">Do you like chocolate?</label>
+        <input type="checkbox" name="chocolate" id="chocolate">
+    </div>
+
+
+
+    <h2>More Inputs!</h2>
+    <form action="/birds">
+        <p>
+            <input type="checkbox" name="agree_tos" id="agree">
+            <label for="agree">I agree to everything</label>
+        </p>
+        <button>Submit</button>
+    </form>
+
+    <h3>Shirt Size</h3>
+    <form action="/shirt-size">
+        <p>
+            <input type="radio" name="shirt-size" id="s" value="s">
+            <label for="s">S</label>
+        </p>
+        <p>
+            <input type="radio" name="shirt-size" id="m" value="m">
+            <label for="m">M</label>
+        </p>
+        <p>
+            <input type="radio" name="shirt-size" id="l" value="l">
+            <label for="l">L</label>
+        </p>
+        <button>Submit</button>
+    </form>
+
+    <p>
+    <h3>Dinner</h3>
+    <form action="/meal-select">
+        <p>
+            <label for="meal">Please select your meal</label>
+            <select name="meal" id="meal">
+                <option value="fried-fish">Fried Fish</option>
+                <option value="steak">Steak</option>
+                <option value="fried-rice">Fried Rice</option>
+                <option value="hotdog">hotdog</option>
+            </select>
+        </p>
+        <button>Submit</button>
+    </form>
+    </p>
+
+    <p>
+    <h3>Amount Cheese</h3>
+    <form action="/cheese">
+        <p>
+            <label for="cheese">Select amount of cheese</label>
+            <input type="range" name="cheese_amount" id="cheese" min="1" max="100">
+        </p>
+        <button>Submit</button>
+    </form>
+    </p>
+
+    <p>
+    <h3>Text Area</h3>
+    <form action="">
+        <label for="request">Any Special Request?</label>
+        <p>
+            <textarea name="request" id="request" cols="30" rows="10" placeholder="Special Request"></textarea>
+        </p>
+        <button>Submit</button>
+    </form>
+    </p>
+</body>
+
+</html>

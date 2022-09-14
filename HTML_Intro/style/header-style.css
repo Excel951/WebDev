@@ -1,0 +1,44 @@
+body {
+    margin: auto;
+}
+
+header #home-icon {
+    width: 2em;
+    height: 2em;
+}
+
+#home img {
+    display: inline;
+}
+
+#home div#home-text {
+    display: inline;
+
+}
+
+header ul.navigations {
+    list-style: none;
+    display: block;
+}
+
+.navigation {
+    display: flex;
+    margin-top: 0em;
+    padding: 0;
+}
+
+header {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1em 1.3em -0.6em #000000;
+    margin: 0 0 2.3rem 0;
+    position: sticky;
+    top: 0em;
+    background-color: whitesmoke;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}

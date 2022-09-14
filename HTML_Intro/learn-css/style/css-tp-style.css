@@ -1,0 +1,27 @@
+h1 {
+    text-align: center;
+    font-weight: normal;
+    text-decoration: #f7812f wavy underline;
+    letter-spacing: 10px;
+    font-size: 80px;
+    /* font-family: Garamond, Goudy Old Style, Palatino, Calisto, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: Papyrus, serif;
+    text-transform: uppercase;
+    /* font-variant-caps: all-petite-caps; */
+
+    /* font-weight: 400;    normal */
+    /* font-weight: 700;    bold */
+
+    /* text-align: right;
+    width: 50%; */
+}
+
+p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}

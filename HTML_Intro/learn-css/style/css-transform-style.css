@@ -1,0 +1,64 @@
+h1 {
+    background-color: #2a9d8f;
+    border: 5px solid #264653;
+    color: #eae2b7;
+    padding: 0.7em;
+    width: 300px;
+    font-size: 1.8em;
+    text-align: center;
+    margin: 20px auto;
+    font-family: Courier New;
+    font-weight: lighter;
+}
+
+h1:nth-of-type(2n) {
+    background-color: #e9c46a;
+}
+
+h1:nth-of-type(3n) {
+    background-color: #f4a261;
+}
+
+h1:nth-of-type(4n) {
+    background-color: #e76f51;
+}
+
+section:first-of-type h1:nth-of-type(1) {
+    /* transform-origin: left bottom; */
+    transform: rotate(45deg);
+}
+
+section:first-of-type h1:nth-of-type(2) {
+    /* transform-origin: left bottom; */
+    /* transform: scale(2, 1); */
+    /* transform: scale(width, length); */
+
+    transform: scale(0.8);
+
+    /* transform: scaleY(1);
+    transform: scaleX(2); */
+}
+
+section:first-of-type h1:nth-of-type(3) {
+    transform: translateX(4em);
+}
+
+section:first-of-type h1:nth-of-type(4) {
+    transform: translate(-13em, 5em);
+}
+
+section:nth-of-type(2) h1:nth-of-type(1) {
+    transform: skew(10deg, 3deg);
+}
+
+section:nth-of-type(2) h1:nth-of-type(2) {
+    transform: skew(3deg);
+}
+
+section:nth-of-type(2) h1:nth-of-type(3) {
+    transform: skew(10deg, 3deg) rotate(45deg) translate(10em) scale(1.3);
+}
+
+section:nth-of-type(2) h1:nth-of-type(4) {
+    transform: skew(-3deg) rotate(-20deg) translate(-10em) scale(1.2);
+}

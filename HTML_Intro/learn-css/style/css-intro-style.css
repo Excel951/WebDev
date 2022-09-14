@@ -1,0 +1,26 @@
+h2 {
+    color: #c5e;
+    background-color: brown;
+}
+
+button {
+    color: #7fffd4;
+    background-color: rgb(102, 51, 153);
+}
+
+p {
+    color: olive;
+    background: cadetblue;
+}
+
+body {
+    background-color: #000;
+}
+
+a {
+    color: #fff;
+}
+
+ul {
+    color: #fff;
+}
